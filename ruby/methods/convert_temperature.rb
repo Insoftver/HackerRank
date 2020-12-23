@@ -27,25 +27,25 @@ end
 
 # USAGE
 
-# => puts  convert_temperature(1) 
+# puts  convert_temperature(1) 
 # => 1
 
-# => puts convert_temperature(1, outputScale: 'fahrenheit')
+# puts convert_temperature(1, outputScale: 'fahrenheit')
 # => 33.8
 
-# => puts convert_temperature(1, outputScale: 'kelvin')
+# puts convert_temperature(1, outputScale: 'kelvin')
 # => 274
 
-# => puts convert_temperature(1, inputScale: 'fahrenheit')
+# puts convert_temperature(1, inputScale: 'fahrenheit')
 # => -17.360000000000003
 
-# => puts convert_temperature(1, inputScale: 'fahrenheit', outputScale: 'kelvin')
+# puts convert_temperature(1, inputScale: 'fahrenheit', outputScale: 'kelvin')
 # => 255.64
 
-# => puts convert_temperature(1, inputScale: 'kelvin')
+# puts convert_temperature(1, inputScale: 'kelvin')
 # => -272
 
-# => puts convert_temperature(1, inputScale: 'kelvin', outputScale: 'fahrenheit')
+# puts convert_temperature(1, inputScale: 'kelvin', outputScale: 'fahrenheit')
 # => -457.6
 
 #
