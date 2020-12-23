@@ -2,7 +2,8 @@
 
 # This script erases empty spaces at the beggining and the
 # end of a given string and removes its last element.
-# These string elements are set ont an array.
+# These string element is part of a set of  elements
+# within an array.
 
 # The function accepts: 
   # =>  array(Array), array to be cleaned.
