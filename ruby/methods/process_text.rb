@@ -8,12 +8,10 @@
 # The function accepts: 
   # =>  array(Array), array to be cleaned.
 
-
 def process_text(array)
   array.size.times {|i| array[i] = array[i].strip.chomp}
   return array.join(' ')
 end
-
 
 # Usage
 
