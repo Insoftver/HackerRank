@@ -1,7 +1,7 @@
 #!/bin/ruby
 
-# This script erases empty spaces at the beggining
-# and the end of string and removed its last element.
+# This script erases empty spaces at the beggining and the
+# end of a given string and removes its last element.
 # These string elements are set ont an array.
 
 # The function accepts: 
