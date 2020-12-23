@@ -23,7 +23,7 @@ def diagonalDifference(matrix)
     primaryResult += primaryDiagonal[i]
     secondaryResult += secondaryDiagonal[i]
   end
-  return (primaryResult - secondaryResult).to_i.abs 
+  return (primaryResult - secondaryResult).to_i.abs#olute 
 end
 
 size = gets.strip.to_i
