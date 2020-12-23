@@ -6,12 +6,12 @@
 # a given size value as shown below.
 
 # The function accepts: 
-  # => size(Integer), size of the staircase.
+ 	# => size(Integer), size of the staircase.
 
 def staircase(size)
-  size.times do |counter|
-    puts "#{" " * ((size-counter)-1)}" + "#{"#" * (counter+1)}"
-  end
+	size.times do |counter|
+		puts "#{" " * ((size-counter)-1)}" + "#{"#" * (counter+1)}"
+	end
 end
 
 # Usage
@@ -21,10 +21,11 @@ end
 	# size = gets.to_i until (1..100).include?(size)
 	
 	# staircase(size)
-	# =>    #
-         ##
-      	###
-     	 ####
-    	#####
+	# =>
+					#
+				 ##
+				###
+			 ####
+			#####
 
 #
