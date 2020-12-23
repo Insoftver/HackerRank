@@ -48,4 +48,5 @@ end
 # puts convert_temperature(1, inputScale: 'kelvin', outputScale: 'fahrenheit')
 # => -457.6
 
+
 #
