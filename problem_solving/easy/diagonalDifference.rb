@@ -35,3 +35,5 @@ size.times do |x|
 end
 result = diagonalDifference matrix
 puts result
+
+#
