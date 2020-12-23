@@ -10,7 +10,7 @@
 
 def staircase(size)
   size.times do |counter|
-	  puts "#{" " * ((size-counter)-1)}" + "#{"#" * (counter+1)}"
+    puts "#{" " * ((size-counter)-1)}" + "#{"#" * (counter+1)}"
   end
 end
 
@@ -19,13 +19,13 @@ end
   # size = 5 # <= testVar
   # or
   # size = gets.to_i until (1..100).include?(size)
-	
+
   # staircase(size)
   # =>
-            #
-           ##
-          ###
-         ####
-        #####
+          #
+         ##
+        ###
+       ####
+      #####
 
 #
