@@ -30,8 +30,8 @@ end
 # ['Silvia', 'Nadia', 'Mariana']
 # ['Silvia', 'Nadia', 'Maria'] => Groups of 3 members
 
-people = gets.to_i
-groups = gets.to_i
+people = gets.to_i#<= 10
+groups = gets.to_i#<= 3
 setGroups = nCrCombination.(people)
 puts setGroups.(groups) # => 120 (Different 3-member-groups)
 
