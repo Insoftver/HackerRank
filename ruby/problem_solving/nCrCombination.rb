@@ -19,7 +19,7 @@ def factorial(number)
 end
 
 # This is very useful to answer such questions like:
-# How many groups of 3 members can be made of a 10 group of people?
+# How many groups of 3 members can be made of a 10-group of people?
 # REFERENCE(Spanish): https://www.youtube.com/watch?v=0SwQ2KCcHvg
 
 # 10 people: 
