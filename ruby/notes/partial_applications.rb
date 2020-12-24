@@ -19,8 +19,8 @@
   # parameter, and return its product using another 
   # parameter and another lambda.
     multiplyFunction = -> (number) do
-       -> (another_number) do
-           number * another_number
+       -> (anotherNumber) do
+           number * anotherNumber
        end
     end
 
