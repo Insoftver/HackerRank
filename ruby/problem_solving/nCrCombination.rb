@@ -21,12 +21,11 @@ end
 # nCrCombination: It is the amount of (r) elements selected 
 # out of a list of (n) different elements.
 # This is very useful to answer such questions like;
-# How many 3-member-groups be made out of a 10-group of people?
+# How many 3-member-groups can be made out of a 10-group of people?
 # REFERENCE(Spanish): https://www.youtube.com/watch?v=0SwQ2KCcHvg
 
-# 10 people: 
 # ['Silvia', 'Mariana', 'Nadia', 'Ana', 'Jorge', 
-#  'Maria', 'Alejandra', 'Juan', 'Pablo', 'Enrique']
+#  'Maria', 'Alejandra', 'Juan', 'Pablo', 'Enrique'] => 10 people
 
 # ['Silvia', 'Nadia', 'Mariana']
 # ['Silvia', 'Nadia', 'Maria'] => Groups of 3 members
