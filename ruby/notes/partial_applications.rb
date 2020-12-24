@@ -1,6 +1,6 @@
-##############################################################
+  #############################################################################
 ### PARTIAL APPLICATIONS
-##############################################################  
+  #############################################################################  
 
 # This script is related with this problem.
 # https://www.hackerrank.com/challenges/ruby-partial-applications/problem
@@ -10,9 +10,9 @@
 
 # NOTE: In some cases may be very similar as if your were 
 # currying the methods 
-##############################################################
+  #############################################################################
 ### Example
-##############################################################  
+  #############################################################################  
   # In this example the lambda multiplyFunction takes a
   # parameter, and return its product using another 
   # parameter and another lambda.
@@ -35,6 +35,6 @@
     tripler = multiplyFunction.(3)# <- new lambda
   # doubler = multiplyFunction.curry.(3) <- Compare if currying!!!
     puts tripler.(4) # => 12
-##############################################################
+  #############################################################################
 
 #
