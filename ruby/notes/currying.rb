@@ -24,8 +24,8 @@
   end
   # Procs to be curried.
     proc  = self.method(:example).curry
-    proc02 = proc.call(1, 2)          #=> #<Proc>
-    proc02.call(3)                    #=> [1,2,3]
+    proc02 = proc.call(1, 2) #=> #<Proc>
+    proc02.call(3) #=> [1,2,3]
 
   ### EXAMPLE02
   # Method
@@ -34,7 +34,7 @@
     end
   # Procs to be curried.
     proc = self.method(:example02).curry(4)
-    proc2 = proc.call(:x)      #=> #<Proc>
+    proc2 = proc.call(:x) #=> #<Proc>
     proc3 = proc2.call(:y, :z) #=> #<Proc>
-    proc3.call(:a)             #=> [:x, :y, :z, :a]
+    proc3.call(:a) #=> [:x, :y, :z, :a]
 ##############################################################
