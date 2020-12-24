@@ -9,21 +9,29 @@
 # https://dev.to/cooljasonmelton/algorithms-calculating-combination-in-ruby-4n3e
 
 nCrCombination = -> (num1) do
-  -> (num2) do
-    factorial(num1) / (factorial(num2) * factorial(num1 - num2))
+  -> (num2) do # => nCr Combination formula
+    factorial(num1) / (factorial(num2) * factorial(num1-num2))
   end
 end
 
-def factorial(num)
-    (1..num).inject(1){ |prod, i| prod * i } 
+def factorial(number)
+    (1..number).inject(1) {|factor,counter|factor*counter} 
 end
 
-n = gets.to_i
-r = gets.to_i
-nCr = nCrCombination.(n)
-puts nCr.(r)
+# This is very useful in order to answer such questions like:
+# How many groups of 3 members can be made of a 10 group of people?
+# REFERENCE(Spanish): https://www.youtube.com/watch?v=0SwQ2KCcHvg
+
+# 10 people: 
+# ['Silvia', 'Mariana', 'Nadia', 'Ana', 'Jorge', 
+#  'Maria', 'Alejandra', 'Juan', 'Pablo', 'Enrique']
+
+# ['Silvia', 'Nadia', 'Mariana']
+# ['Silvia', 'Nadia', 'Maria'] => Groups of 3 members
+
+people = gets.to_i
+groups = gets.to_i
+setGroups = nCrCombination.(people)
+puts setGroups.(groups) # => 120 (Different groups of 3 members)
 
 #
-
-
-
