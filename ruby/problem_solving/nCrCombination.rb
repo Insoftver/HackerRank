@@ -18,7 +18,7 @@ def factorial(number)
     (1..number).inject(1) {|factor,counter|factor*counter} 
 end
 
-# This is very useful in order to answer such questions like:
+# This is very useful to answer such questions like:
 # How many groups of 3 members can be made of a 10 group of people?
 # REFERENCE(Spanish): https://www.youtube.com/watch?v=0SwQ2KCcHvg
 
