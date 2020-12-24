@@ -13,16 +13,14 @@
   # =>  sigma(Proc), return of proc_sigma.
   # =>  square(Array), number to be operated.
 
-
 def square_of_sum (array, square, sigma)
-    sum = sigma.call(array)
-    square.call(sum)
+  sum = sigma.call(array)
+  square.call(sum)
 end
 
-proc_square = proc {|x| x*x}
-proc_sigma     = proc {|x| x.inject(:+)}
+proc_square = proc {|x|x*x}
+proc_sigma = proc {|x|x.inject(:+)}
 array = gets.split.map(&:to_i)
-
 puts square_of_sum(array, proc_square, proc_sigma)
 
 #
