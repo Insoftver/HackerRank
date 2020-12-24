@@ -6,7 +6,8 @@
   # => Can be passed around as an object.
   # => Remembers the value of variables no longer in scope.
 
-  # NOTE: Procs and Lambdas are closures in Ruby. 
+  # NOTE: Procs and Lambdas are closures in Ruby,
+  # blocks are NOT closures as they are not values. 
 ##############################################################
 
 
