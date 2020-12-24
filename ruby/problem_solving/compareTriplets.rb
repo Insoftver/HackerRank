@@ -11,7 +11,7 @@ def compareTriplets(aliceValues, bobValues)
     if aliceValues[i] > bobValues[i] then results[0] += 1 end
     if aliceValues[i] < bobValues[i] then results[1] += 1 end
   end
-  return results
+  return "#{results[0]} #{results[1]}"
 end
 
 aliceValues = gets.rstrip.split.map(&:to_i)
