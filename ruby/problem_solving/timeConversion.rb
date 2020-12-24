@@ -3,7 +3,7 @@
 # This script solves the next problem.
 # https://www.hackerrank.com/challenges/time-conversion/problem
 # The function is expected to print a military format 
-# 24 hour time given starting value as shown below.
+# (24-hour) time given starting value as shown below.
 
 # The function accepts: 
 # => size(Integer), size of the staircase.
