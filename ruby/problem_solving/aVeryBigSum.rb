@@ -6,7 +6,7 @@
 # The function accepts an INTEGER_ARRAY as parameter.
 
 def aVeryBigSum(array)
-  return array.inject {|sigma,number| sigma+number}
+  array.inject {|sigma,number| sigma+number}
 end
 
 arrayCount = gets.to_i until (1..10).include?(arrayCount)
