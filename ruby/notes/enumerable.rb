@@ -14,6 +14,42 @@
 #############################################################################
 
 
+#############################################################################
+### reduce / inject
+#############################################################################  
+  # Combines all elements of enum by applying a binary operation, specified 
+  # by a block or a symbol that names a method or operator. The inject and 
+  # reduce methods are aliases. There is no performance benefit to either.
+  
+  # => If you specify a block, then for each element in enum the block is 
+  # passed an accumulator value or memo (1st element) and the element to
+  # be operated in the second place.
+
+  # => If you specify a symbol instead, then each element in the collection 
+  # will be passed to the named method of memo. 
+
+  # In either case, the result becomes the new value for memo. At the end of 
+  # the iteration, the final value of memo is the return value 
+  # for the method.
+
+  # If you do not explicitly specify an initial value for memo, then the first 
+  # element of collection is used as the initial value of memo.
+  
+  # Some operations
+    (5..10).reduce(:+) #=> 45
+    (5..10).reduce(1, :*) #=> 151200
+
+  # Same using a block and inject
+    (5..10).inject { |sigma, number| sigma + number } #=> 45
+    (5..10).inject(1) { |product, number| product * number } #=> 151200
+  
+  # Find the longest word
+  longest = %w{ cat sheep bear }.inject do |lastWord, word|
+     lastWord.length > word.length ? lastWord : word
+  end
+  longest #=> "sheep"
+#############################################################################
+
 
 #############################################################################
 ### map / collect
