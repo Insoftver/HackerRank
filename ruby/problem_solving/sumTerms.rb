@@ -8,7 +8,7 @@
 # https://ruby-doc.org/core-2.5.1/Enumerable.html
 
 def sumTerms number
-	(0..number).inject {|sigma,counter| sigma + (counter * counter + 1 )}
+  (0..number).inject {|sigma,counter| sigma + (counter * counter + 1 )}
 end
 
 # puts sumTerms 5
