@@ -14,8 +14,27 @@
 #############################################################################
 
 
+
 #############################################################################
-### ALL method
+### map / collect
+#############################################################################  
+  # Map as the name may suggest, takes a function and maps (applies) it to a 
+  # collection of values one by one and returns the collection of result.
+  # On an array.
+    [1,2,3].map { |x| 2*x } # => [2, 4, 6]
+  
+  # On an hash 0> Here is used collect
+    {:a=>1, :b=>2, :c=>3}.collect { |key, value| 2*value }
+    # => [2, 4, 6]
+
+  # Note that these methods are different from each in the respect that these 
+  # methods return a new collection while former returns the original 
+  # collection, irrespective of whatever happens inside the block. 
+#############################################################################
+
+
+#############################################################################
+### all
 #############################################################################
   %w[ant bear cat].all? { |word| word.length >= 3 } #=> true
   %w[ant bear cat].all? { |word| word.length >= 4 } #=> false
