@@ -15,6 +15,7 @@
 
 
 #############################################################################
+### ALL method
 #############################################################################
   %w[ant bear cat].all? { |word| word.length >= 3 } #=> true
   %w[ant bear cat].all? { |word| word.length >= 4 } #=> false
@@ -22,21 +23,32 @@
   [1, 2i, 3.14].all?(Numeric) #=> true
   [nil, true, 99].all? #=> false
   [].all? #=> true
-#############################################################################  
+#############################################################################
 
 
-# This script solves this problem.
-# https://www.hackerrank.com/challenges/ruby-enumerable-each-with-index/problem
-# To solve it this source was studied.
-
-def iterate_colors(colors)
-  counter = 0
-  values = Array.new
-  colors.each do |color|
-      values[counter] = color
-      counter += 1
+#############################################################################
+### each
+#############################################################################
+  def iterate_colors(colors)
+    counter = 0
+    values = Array.new
+    colors.each do |color|
+        values[counter] = color
+        counter += 1
+    end
+    return values
   end
-  return values
-end
+#############################################################################
+
+
+#############################################################################
+### each_with_index
+#############################################################################
+    colors = ['red', 'green', 'blue']
+    colors.each_with_index { |item, index| p "#{index}:#{item}" }
+    # => "0:red"
+    # => "1:green"
+    # => "2:blue"
+#############################################################################
 
 #
