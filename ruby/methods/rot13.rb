@@ -16,6 +16,6 @@ end
 # => Jul qvq gur puvpxra pebff gur ebnq?
 
 # puts rot13 ['To', 'get', 'to', 'the', 'other', 'side']
-# => Gb trg gb gur bgure fvqr
+# => Gb trg gb gur bgure fvqr 
 
 #
