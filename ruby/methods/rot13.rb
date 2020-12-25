@@ -9,7 +9,7 @@
 # https://esolangs.org/wiki/ROT13-Ruby
 
 def rot13 array
-	array.map {|element| element.tr 'A-Za-z', 'N-ZA-Mn-za-m'}
+  array.map {|element| element.tr 'A-Za-z', 'N-ZA-Mn-za-m'}
 end
 
 # puts rot13 ['Why', 'did', 'the', 'chicken', 'cross', 'the', 'road?']
