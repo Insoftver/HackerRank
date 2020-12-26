@@ -2,7 +2,6 @@
 
 # This script solves this problem.
 # https://www.hackerrank.com/challenges/ruby-enumerable-any-all-none-find/problem
-
 # To solve it this source was studied.
 # https://ruby-doc.org/core-2.7.0/Array.html
 
@@ -26,10 +25,10 @@ end
 
 def func_find(hash)
     # Check and return the first object that satisfies either of the following properties:
-    #   1. There is a [key, value] pair where the key and value are both Integers and the value is < 20 
+    #   1. There is a [key, value] pair where the key and value are both Integers and the value is < 20
     #   2. There is a [key, value] pair where the key and value are both Strings and the value starts with `a`.
     hash.find do |key, value|
-      (key.is_a?(Integer) && value.is_a?(Integer) && v < 20) || 
+      (key.is_a?(Integer) && value.is_a?(Integer) && v < 20) ||
       (key.is_a?(String) && value.is_a?(String) && v.start_with?('a'))
     end
 end
