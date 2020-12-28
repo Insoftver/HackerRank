@@ -8,7 +8,6 @@
   # An Integer denoting the number of queries.
   # Two Integer arrays wih the locations.
 
-
 def catAndMouse(x, y, z)  catA = distance(x,z)
   catB = distance(y,z)
   if catA == catB
