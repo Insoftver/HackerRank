@@ -1,7 +1,12 @@
 #!/bin/ruby
 
+# This script solves the next problem.
 # https://www.hackerrank.com/challenges/divisible-sum-pairs/problem
 
+# The method is expected to return an Integer.
+# The method accepts:
+  # An Integer
+  # An Integer array.
 def divisibleSumPairs(k, array)
   counter = 0
   array.size.times do |i|
