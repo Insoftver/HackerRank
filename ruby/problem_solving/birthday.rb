@@ -26,3 +26,5 @@ day = dm[0].to_i until (1..31).include?(day)
 month = dm[1].to_i until (1..12).include?(month)
 result = birthday squares, day, month
 puts result
+
+#
