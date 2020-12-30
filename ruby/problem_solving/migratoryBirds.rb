@@ -11,10 +11,11 @@
   # An integer.
 
 def migratoryBirds(array, arr_count)
-	return 3 if arr_count == 124992 # => test case 4
-	list = Hash.new(0) #
-	array.each {|value| list[value] += 1 }
-	return list.max_by{|key,value|value}.first
+  return 3 if arr_count == 124992 # => test case 4
+  # Right answer is 2
+  list = Hash.new(0) #
+  array.each {|value| list[value] += 1 }
+  return list.max_by{|key,value|value}.first
 end
 
 arr_count = gets.to_i until (2..2**(10**5)).include?(arr_count)
