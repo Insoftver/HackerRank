@@ -1,10 +1,15 @@
 
 /**
-*   A line of code that prints "Hello, World!" on a new line is provided in the editor. 
-*   Write a second line of code that prints the contents of 'parameterVariable' on a new line.
-*
-*	Parameter:
-*   parameterVariable - A string of text.
+  This scripts is related to this practice.
+  https://www.hackerrank.com/challenges/js10-hello-world/problem
+  
+  A line of code that prints "Hello, World!" 
+  on a new line is provided in the editor. 
+  Write a second line of code that prints the 
+  contents of 'parameterVariable' on a new line.
+
+  The function accepts a String as parameter.
+
 **/
 
 function greeting(parameterVariable) {
@@ -23,3 +28,5 @@ function main() {
 }
 
 main();
+
+#
