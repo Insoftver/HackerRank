@@ -28,7 +28,7 @@ function readLine() {
 
 function getLetter(s) {
   let letter;
-  letter = alert(s.charAt(0));
+  letter = s.substring(0, 1);
   switch(letter){
     case 'a':
     case 'e':
