@@ -26,43 +26,51 @@ if (score > 25) {
 
 // Conditional switch can be used this way
 
-  switch(letter){
-    case 'a':
-    case 'e':
-    case 'i':
-    case 'o':
-    case 'u':
-      letter = 'A';
-      break;
-    case 'b':
-    case 'c':
-    case 'd':
-    case 'f':
-    case 'g':
-      letter = 'B';
-      break;
-    case 'h':
-    case 'j':
-    case 'k':
-    case 'l':
-    case 'm':
-      letter = 'C';
-      break;
-    case 'n':
-    case 'p':
-    case 'q':
-    case 'r':
-    case 's':
-    case 't':
-    case 'v':
-    case 'w':
-    case 'x':
-    case 'y':
-    case 'z':
-      letter = 'D';
-      break;
-  }
+switch(letter){
+  case 'a':
+  case 'e':
+  case 'i':
+  case 'o':
+  case 'u':
+    letter = 'A';
+    break;
+  case 'b':
+  case 'c':
+  case 'd':
+  case 'f':
+  case 'g':
+    letter = 'B';
+    break;
+  case 'h':
+  case 'j':
+  case 'k':
+  case 'l':
+  case 'm':
+    letter = 'C';
+    break;
+  case 'n':
+  case 'p':
+  case 'q':
+  case 'r':
+  case 's':
+  case 't':
+  case 'v':
+  case 'w':
+  case 'x':
+  case 'y':
+  case 'z':
+    letter = 'D';
+    break;
+}
 
-  // This method gets the first character of a string.
-  // https://www.w3schools.com/jsref/jsref_substring.asp
-  character = string.substring(0, 1);
+// substring()
+// https://www.w3schools.com/jsref/jsref_substring.asp
+let string ;
+string = 'Hello'
+character = string.substring(1, 4); // ell
+
+// atChar()
+// https://www.w3schools.com/jsref/jsref_charat.asp
+character = string.atChar(1); // e
+
+//
