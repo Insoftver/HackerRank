@@ -64,4 +64,5 @@ if (score > 25) {
   }
 
   // This method gets the first character of a string.
+  // https://www.w3schools.com/jsref/jsref_substring.asp
   character = string.substring(0, 1);
