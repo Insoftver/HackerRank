@@ -27,8 +27,9 @@ function readLine() {
 }
 
 /*
- * Complete the vowelsAndConsonants function.
- * Print your output using 'console.log()'.
+ * This is not my code, I was able to find an answer
+ * but was impractical and ugly, so I copied this code
+ * and noted its methods to day2.js
  */
 function vowelsAndConsonants(s) {
     const vowels = 'aeiou';
