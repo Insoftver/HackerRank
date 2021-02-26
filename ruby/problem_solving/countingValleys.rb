@@ -19,3 +19,5 @@ steps = gets.to_i until (2..10**6).include?(steps)
 path = gets.chomp
 result = countingValleys steps, path
 puts result
+
+#
